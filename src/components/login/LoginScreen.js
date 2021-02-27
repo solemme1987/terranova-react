@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import logoIndex from  '../../assets/img/main/logo-index.png';
 
 
@@ -34,12 +35,12 @@ const LoginScreen = () => {
             </div>
 
             <div className="btn-box">
-                <a href="index.html">
+                <Link to="/auth/home">
                     <button className="btn-index">
                             Nuestro menú
                             <i className="fas fa-chevron-right"></i>
                     </button>
-                </a>
+                </Link>
             </div> 
 
 

@@ -27,7 +27,7 @@ export const AppRouter = () => {
                     path="/"
                     component={ LoginScreen  }
                   />
-                   <Redirect to="/auth/login" />
+                   <Redirect to="/" />
               </Switch>
 
              </div>
