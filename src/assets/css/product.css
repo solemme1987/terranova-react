@@ -1,0 +1,263 @@
+.container{
+    background: var(--orange);
+}
+
+header{
+    margin-bottom: 103px;
+}
+/* ------------------------------------------------
+    ESTILOS  PAR LA SESION DE INFO PRODUCTO imagen
+--------------------------------------------------*/
+.productInfo{
+    position: relative;
+    background:var(--dark);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    flex:1 auto;
+}
+
+.productInfo .img-info-container{
+   position: absolute;
+   top:2%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.productInfo .img-info-container img{
+    width: 197px;
+    height: 188px;
+    border-radius: 30px;
+    box-shadow: 11px 15px 33px 11px rgba(0, 0, 0, 0.25);
+}
+
+.productInfo .product-description{
+  margin-top: 117px;
+  padding: 0 51px;
+  text-align: center;
+}
+
+.productInfo .product-description h1{
+    font-size: 20px;
+    font-weight: 700;
+    color:var(--white);
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.productInfo .product-description p{
+  margin:0;
+  font-size: 11px;
+  color: var(--lightOrange);
+  line-height: 12px;
+  text-align: center;
+}
+
+/* ------------------------------------------------
+    ESTILOS  PAR LA SESION DE INFO PRODUCTO Precio
+    y cantidad
+--------------------------------------------------*/
+.price-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.price-container .price{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.price-container-body{
+    display: flex;
+    width: 238px;
+    justify-content: space-between;
+    margin-top: 16px;
+    align-items: center;
+    border: 0.031rem solid gray;
+    border-radius: 43px;
+    padding-left: 15px;
+    left:50%;
+}
+
+.card-buttons {
+    background: var(--midDark);
+    width: 122px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 43px;
+    padding: 0 5px;
+}
+
+ .card-buttons button {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    transition: 0.1s ease-in-out;
+    font-size: 19px;
+    align-items: center;
+}
+
+ .card-buttons .subs {
+    border: 0.5px solid var(--lightOrange);
+    color: var(--lightOrange);
+}
+
+ .card-buttons .quantity {
+    margin: 0 10px 0 10px;
+    font-size: 17px;
+}
+
+.card-buttons .add {
+    background: var(--lightOrange);
+}
+
+/* ------------------------------------------------
+    ESTILOS  PARA el titulo de perzonalizacion
+--------------------------------------------------*/
+.config-title-box, .config-option-tittle{
+    border-bottom:1px solid var(--orange);
+    padding: 10px 0 10px 30px;
+}
+
+.config-title-box h3,.config-option-tittle h3{
+    font-size: 18px;
+    line-height: 0;
+    margin-bottom: 13px;
+}
+
+.config-title-box p,.config-option-tittle p{
+    font-size: 11px;
+    line-height: 0;
+    color: var(--lightOrange);
+}
+
+/* ------------------------------------------------------------
+    ESTILOS  PARA LOS TEXTOS DE LASOPCIONES DE PERSONALIZACION
+---------------------------------------------------------------*/
+.config-container{
+    height: 400px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.config-container::-webkit-scrollbar {
+   display: none;
+}
+
+.config-container .config-option{
+    padding: 10px 30px 10px 30px;
+    border-bottom:1px solid var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.config-container .config-option span{
+    font-size: 15px;
+}
+
+/* ------------------------------------------------Salsa Rosada
+    ESTILOS  PARA EL CHECKBOX DE LAS OPCIONES
+--------------------------------------------------*/
+.config-option .checkbox input[type="checkbox"]{
+    visibility: hidden;
+}
+
+.config-option .checkbox{
+    background: transparent;
+    width: 20px;
+    height: 19px;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid var(--lightOrange);
+}
+
+.config-option .checkbox label{
+    background:transparent;
+    width: 20px;
+    height: 19px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all .5s ease;
+}
+.config-option .checkbox input[type=checkbox]:checked + label {
+    background:var(--orange);
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: 3px; 
+}
+
+/* ------------------------------------------------
+    ESTILOS  PARA LOS CONTROLES DE LAS BEBIDAS
+    Y ADICIONES
+--------------------------------------------------*/
+.config-option .price-drink{
+    color:var(--lightOrange);
+    font-weight: 600;
+}
+
+.config-option .checkbox-drink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.config-option .checkbox-drink button {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    transition: 0.1s ease-in-out;
+    font-size: 19px;
+    align-items: center;
+}
+
+.config-option .checkbox-drink .add {
+    background: var(--lightOrange);
+}
+.config-option .checkbox-drink .subs {
+    border: 1px solid var(--lightOrange);
+    color: var(--white);
+}
+
+.config-option .checkbox-drink .quantity {
+    margin: 0 10px 0 10px;
+    font-size: 17px;
+}
+
+
+/* .checkbox-drink{
+
+} */
+/* .config-container .config-option.tittle{
+    padding: 10px 0 10px 30px;
+} */
+
+/* ------------------------------------------------
+    ESTILOS  PAR EL FOOTER
+--------------------------------------------------*/
+footer{
+    background: var(--dark);
+
+}
+@media (min-width:412px){
+
+    .productInfo .product-description h1{
+        font-size: 22px;
+    }
+
+
+}

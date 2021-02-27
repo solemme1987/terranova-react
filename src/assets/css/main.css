@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
+
+:root{
+
+    /* DARK MODE */
+    --orange: #EE753C;
+    --lightOrange: #F8BC3B;
+    --lightOrangeHover: #f07c46;
+    --dark: #251D2D;
+    --midDark: #3D3940;
+    --white: #FFFFFF;
+    --darkHover: #68626d;
+    /* LIGHT MODE */
+    --redWine: #711f24;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    color: var(--white);
+    padding: 43px 0 0 0;
+    position: relative;
+    background: var(--dark);
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.container a:hover{
+    cursor:pointer;
+}
+
+/* ------------------------------------------------
+   STILOS al menú oculto el side bar
+--------------------------------------------------- */
+aside.side-bar{
+ position: fixed;
+ background: var(--midDark);
+ z-index: 5;
+ width: 0px;
+ height: 100vh;
+ top:0;
+ right: 0;
+ transition: 0.3s ease-in-out;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+aside.side-bar.active{
+    width: 230px;
+}
+
+aside .side-bar-title{
+    font-size: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 8px;
+}
+
+aside .option-pay-container{
+    padding: 0 10px 0 0;
+}
+
+aside .option-pay-container .pay-tittle,.theme-tittle{
+    font-size: 16px;
+}
+
+/* --------------------------------
+   STILOS a LAS TARJETAS DE PAGO
+----------------------------------*/
+aside .option-pay-container .card-pay {
+    border:1px solid var(--white);
+    height: 90px;
+    border-radius: 11px;
+    display: flex;
+    margin-top: 15px;
+}
+
+aside .option-pay-container .card-pay .card-pay-img{
+    width: 50%;
+    font-size: 11px;
+    line-height: 0;
+    padding-top: 3px;
+    border-right: 1px solid var(--white);
+}
+
+aside .option-pay-container .card-pay .card-pay-form{
+    width: 50%;
+    /* background: blue;s */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-pay input[type="radio" i]{
+    width: 30px;
+    height: 30px;
+}
+
+/* Div par el boton cerrar */
+aside .close-container{
+    width: 100%;
+    position: relative;
+    text-align: right;
+    font-size: 40px;
+}
+
+/*  boton cerrar */
+aside .close-container .btn-close-side-bar{
+  margin-right: 30px;
+  margin-bottom: 13px;
+}
+/* ------------------------------------------------
+   STILOSA LA BARRA DE BUSQUEDA YSUS BOTONES
+--------------------------------------------------- */
+    header{
+     padding:0px 30px; 
+    }
+
+    header .searchBar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .searchBar .btn-search-bar{
+        width: 29px;
+        height: 28px;
+        border: 1px solid var(--white);
+        border-radius: 7px ;
+        background: transparent;
+        color: var(--white);
+        outline: 0;
+    }
+
+    header .searchBar .inputContainer{
+        width: 100%;
+        text-align: right;
+        margin-top: 0;
+        display: flex;
+        padding: 0 5px;
+    }
+
+    header .searchBar .searchInput{
+        background: transparent;
+        border:0;
+        border-radius: 7px ;
+        height: 24px;
+        outline: 0;
+        transition: 0.2s ease-in-out;
+        width: 0;
+    }
+
+    header .searchBar .searchInput.active{
+        border:1px solid var(--white);
+        color: var(--white);
+        padding-left: 10px;
+        flex-grow: 1;
+    }
+/* ------------------------------------------------
+    ESTILOS AL TITULO DE PANTALLA PRINCIPAL Y LOGO
+--------------------------------------------------- */
+
+    .tittleAndLogoBox{
+        display: flex;
+        justify-content: space-between;
+        margin-top: px;
+        margin-top: 42px;
+    }
+
+    .tittle,.time,.hours{
+        margin:0;
+        padding: 0;
+        margin-bottom: -8px;
+    }
+
+    .tittleAndLogoBox .tittleBox .tittle{
+        font-size: 24px;
+        font-weight: 600;
+        /* height: 36px; */
+    }
+
+
+    .tittleAndLogoBox .tittleBox p{
+        margin-top: 5px;
+        font-size: 14px;  
+    }
+
+    .tittleAndLogoBox .tittleBox .time{
+        margin-bottom: -4px; 
+    }
+
+    .tittleAndLogoBox .tittleBox .hours{
+        border: 1px solid var(--white);
+        border-radius: 43px;
+        width: 137px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .tittleAndLogoBox .logoBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .tittleAndLogoBox .logoBox .logo{
+    width: 93px;
+    height: 95px;
+    }
+
+    /* Abierto o cerrado */
+    .tittleAndLogoBox .logoBox .openClose{
+        padding: 1px 5px;
+        margin: 0;
+        background: var(--lightOrange);
+        border-radius: 158px;
+        font-size: 14px;
+        color: var(--redWine)
+    }
+
+    /* Estrella del ranking */
+    .tittleAndLogoBox .logoBox .ranking{
+        
+        padding: 0px 5px;
+        margin: 0;
+        background: var(--lightOrange);
+        border-radius: 158px;
+        font-size: 14px;
+        color: var(--redWine)
+    }
+
+ /* ------------------------------------------------
+    ESTILOS  A LAS CATEGORIAS
+--------------------------------------------------- */
+    .categoryBox .categoryTittle{
+        margin: 0;
+        font-size: 22px;
+        font-weight: 510;
+        padding: 0;
+        padding-left:30px;
+    }
+
+    .categoryBox .listCategories{
+        display: flex;
+        outline: 0;
+        flex-wrap: nowrap;
+        margin-top: 5px;
+        padding-left:30px;
+        padding-right: 30px;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .listCategories::-webkit-scrollbar {
+        display: none;
+    }
+
+    .categoryBox .listCategories .btn-list-item{
+        font-size: 1rem;
+        color: var(--white);
+        background: var(--midDark);
+        border: 0;
+        border-radius: 43px;
+        outline: 0;
+        padding: 7px 16px;
+        width: auto;
+        height: 35px;
+        margin-right: 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .categoryBox .listCategories .btn-list-item:hover{
+        background: var(--darkHover);
+    }
+
+    .categoryBox .listCategories .btn-list-item.active{
+        background: var(--lightOrange);
+        color: var(--dark);
+    }
+
+    .categoryBox .listCategories .btn-list-item.active:hover{
+        background: var(--lightOrangeHover);
+        color: var(--white);
+    }
+
+ /* ------------------------------------------------
+    ESTILOS  LAS CARDS DE PRODUCTOS
+--------------------------------------------------- */
+
+    .productSection{
+
+        padding:0 30px 0 30px;
+        /* Estas dos uultimas lineas son de
+        prueba para el scrol de los productos
+        se pueden activar para ver la prueba */
+        height: 489px;/*debe tenr al menos 1 px de alto para que  el flxe 1 auto funcione*/
+        overflow: scroll;
+        scroll-behavior: smooth;
+        /*aqui aplico d2 propiedades 1 es flex grow 1 y flexgrw basic.
+        son par que me aplique tod el ancho yel alto que pueda el elemento,
+        el contenedor principal está en flex */
+        flex:1 auto;
+        margin-bottom: 16px;
+    }
+
+    /* Esta tambien acompaña la prueba del scroll en productos */
+    .productSection::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* titulo categoria seleccionada en la seccion de producto */
+    .productTittleCat {
+        font-size: 18px;
+        background: var(--dark);
+        margin: 18px 0 5px 30px;
+    }
+
+    .productSection .card-product{
+        display: flex;
+        background: linear-gradient(0deg, var(--midDark), transparent) ;
+        border-radius: 13px;
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .productSection .card-product:first-child{
+       margin-top: 0px;
+    }
+
+    .productSection .card-product .card-body{
+        position:relative;
+        width: 100%;
+        padding-right:12px ;
+    }
+
+    .card-tittle,.card-text,.card-pay{
+        margin:0;
+        margin-left: 15px;
+    }
+
+    .productSection .card-product .card-body .card-header{
+        width: 100%;
+    }
+
+    /* Titulo del producto */
+    .productSection .card-product .card-body .card-tittle{
+        font-size: 16px;
+        font-weight: 500;
+        margin-top:6px;
+    
+    }
+    /* Estilos a los enlaces de los titulos */
+    .productSection .card-product .card-body .card-tittle a{
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .productSection .card-product .card-body .card-tittle a:visited{
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    /* Texto en amarillo en el producto */
+    .productSection .card-product .card-body .card-text{
+        font-size: 11px;
+        font-weight: 500;
+        color:var(--lightOrange)
+    }
+
+    .productSection .card-product .card-body .card-pay{
+        color:var(--orange);
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+
+    /* Botones */
+    .productSection .card-product .card-body .card-buttons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 12px;
+        position: absolute;
+        width: 85%;
+        right: 0;
+        bottom: 0;
+        height: 60px;
+    }
+
+    .productSection .card-product .card-body .card-buttons button{
+        width: 25px;
+        height: 25px; 
+        font-size: 16px;
+        background: transparent;
+        outline: 0;
+        border: 0;
+        border-radius: 50%;
+        transition: 0.1s ease-in-out;
+    }
+
+    .productSection .card-product .card-body .card-buttons button:hover{
+          transform: scale(1.3);
+    }
+
+    .productSection .card-product .card-body .card-buttons .subs{
+        border: 0.5px solid var(--lightOrange); 
+        color: var(--lightOrange); 
+        
+    }
+
+    .productSection .card-product .card-body .card-buttons .add{
+        background :var(--lightOrange); 
+        
+    }
+
+    .productSection .card-product .card-body .card-buttons .quantity{
+        margin: 0 10px 0 10px;  
+        font-size: 12px;
+    }
+
+/* ------------------------------------------------
+    ESTILOS  PIE DE PAGINA (MENU BAR)
+--------------------------------------------------- */
+    footer.menu-bar{
+        position: relative;
+        bottom:0 ;
+        width: 100%;
+        margin-bottom: 0;
+        /* background:red;s */
+    }
+
+    /* Doy formato a los botnes home y config */
+    footer.menu-bar .inner-menu-bar i{
+        width: 45px;
+        height: 47px;
+        font-size: 35px;
+        color: var(--white);
+        outline: 0;
+        background:transparent;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        transition: 0.1s ease-in-out;
+    }
+
+    footer .inner-menu-bar i:hover{
+        font-size: 45px;
+    }
+
+    footer .car-button-container{
+        /* aporte jls */
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        background: var(--orange);
+        border-radius:50px ;
+        display: flex;
+        font-size: 30px;
+        height: 60px;
+        justify-content: center;
+        width: 60px;
+        z-index: 1;
+
+    }
+
+    footer .car-button-container span.quantity{
+        background: var(--lightOrange);
+        border:1px solid var(--white);
+        border-radius:  10px;
+        color:var(--dark);
+        font-size:12px;
+        margin-right: -7px;
+        margin-top: -35px;
+        padding:0 5px;
+        position: absolute;
+        right: 0;
+    }
+
+    footer .inner-menu-bar{
+        position: relative;
+        align-items: center;
+        background: var(--midDark);
+        /* bottom: 0; */
+        display: flex;
+        justify-content: space-between;
+        height: 49px;/* Tambien podria ser de 55px */
+        margin-top: 16px;
+        padding: 30px 30px 0 30px;
+        /* ESta linea me hace la figura de poligon en el menu bar */
+        clip-path: polygon(50% 14%, 100% 35%, 100% 100%, 0 100%, 0% 35%);
+        /* z-index: -1; */
+    }
+
+
+@media (min-width:414px){
+
+}
