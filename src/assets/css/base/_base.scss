@@ -6,14 +6,14 @@
 }
 
 html,body{
-    // height: 100vh;
-    // max-width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
     // background: red;
     // overflow: hidden;
 }
 
 header{
-    width: 100%;
+    // width: 100%;
 }
 
 h1,h2,h3,h4,h5{
@@ -22,7 +22,8 @@ h1,h2,h3,h4,h5{
 
 .container{
     color:$white;
-    padding: 43px 0 0 0;
+    // padding: 43px 0 0 0;
+    padding: 0px 0 0 0;
     position: relative;
     min-height:100vh;
     display: flex;

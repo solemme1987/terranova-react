@@ -1,9 +1,12 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
+
 
 export const SearchBar = () => {
+    const history= useHistory();
     return (
         <div className="searchBar" id="searchBar">
-            <button className="btn-search-bar" id="back">
+            <button onClick={()=>{history.goBack()}}className="btn-search-bar" id="back">
                 <i className="fas fa-chevron-left"></i>
             </button>
 

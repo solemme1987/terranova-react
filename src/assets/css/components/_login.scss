@@ -10,13 +10,14 @@
 
 
 .social-box{
+  //  padding: 43px 0 43px 0;
   z-index: 1;
   color:$midDark;
   width: 100%;
   text-align: right;
   position: absolute;
   font-size: 35px;
-  margin-top: -20px;
+  margin-top: 20px;
   margin-right: 30px;
 }
 
@@ -65,7 +66,7 @@
   width: 748px;
   height: 763px;
   left: -26px;
-  top: -254px;
+  top: -300px;
   border-radius:50%;
   background:$lightOrange;
 }

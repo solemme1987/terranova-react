@@ -17,7 +17,7 @@ export const Product = () => {
                 <p className="card-pay">$15.000</p>
             </div>
 
-            <div className="card-buttons">
+            <div className="card-butns">
                 <button className="subs">-</button>
                 <span className="quantity">2</span>
                 <button className="add">+</button>
