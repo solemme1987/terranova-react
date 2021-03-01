@@ -1,14 +1,34 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Header } from '../../containers/Header'
+import { ProductContainer } from '../../containers/ProductContainer'
+import { Categories } from '../Categories'
+import { Footer } from '../Footer'
+import { Product } from '../Product'
+import { SearchBar } from '../SearchBar'
+import { TextAndLogo } from '../TextAndLogo'
+
 
 function Home() {
     return (
-        <div>
-           <Link to="/auth/product" >
-                    ver producto
-                    </Link>
-            <h1>soy el Home</h1>
-        </div>
+        <>
+            <Header>
+                <SearchBar />
+                <TextAndLogo />
+            </Header>
+
+            <Categories />
+
+             <ProductContainer>
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+                <Product />
+             </ProductContainer>
+
+             <Footer />
+
+        </>
     )
 }
 

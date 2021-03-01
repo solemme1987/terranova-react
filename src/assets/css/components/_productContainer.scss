@@ -1,0 +1,31 @@
+
+    .productSection{
+
+        padding:0 30px 0 30px;
+        /* Estas dos uultimas lineas son de
+        prueba para el scrol de los productos
+        se pueden activar para ver la prueba */
+        height: 489px;/*debe tenr al menos 1 px de alto para que  el flxe 1 auto funcione*/
+        overflow: scroll;
+        scroll-behavior: smooth;
+        /*aqui aplico d2 propiedades 1 es flex grow 1 y flexgrw basic.
+        son par que me aplique tod el ancho yel alto que pueda el elemento,
+        el contenedor principal está en flex */
+        flex:1 auto;
+        margin-bottom: 16px;
+
+        // background: red;
+    }
+
+    /* Esta tambien acompaña la prueba del scroll en productos */
+    .productSection::-webkit-scrollbar {
+      display: none;
+    }
+
+    .productSection .card-product{
+        display: flex;
+        background: linear-gradient(0deg, var(--midDark), transparent) ;
+        border-radius: 13px;
+        margin-top: 16px;
+        width: 100%;
+    }

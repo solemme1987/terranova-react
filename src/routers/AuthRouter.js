@@ -9,7 +9,7 @@ import ProductView from '../components/auth/ProductView';
 
 export const AuthRouter=()=>{
     return (
-        <div>
+        <>
             <Switch>
                 <Route
                     exact
@@ -30,7 +30,7 @@ export const AuthRouter=()=>{
 
                   <Redirect to="/" />
             </Switch>
-        </div>
+        </>
     )
 }
 

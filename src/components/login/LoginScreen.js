@@ -6,7 +6,7 @@ import logoIndex from  '../../assets/img/main/logo-index.png';
 const LoginScreen = () => {
 
     return (
-    <>
+    <div className="container-login">
             <div className="social-box">
                  <a href="#example">
                     <i className="fab fa-facebook"> </i>
@@ -41,10 +41,10 @@ const LoginScreen = () => {
                             <i className="fas fa-chevron-right"></i>
                     </button>
                 </Link>
-            </div> 
+            </div>
 
 
-        </>
+        </div>
     )
 }
 export default LoginScreen;

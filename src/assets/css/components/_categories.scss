@@ -1,0 +1,56 @@
+.categoryBox .categoryTittle{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 510;
+    padding: 0;
+    padding-left:30px;
+}
+
+.categoryBox .listCategories{
+    display: flex;
+    outline: 0;
+    flex-wrap: nowrap;
+    margin-top: 5px;
+    padding-left:30px;
+    padding-right: 30px;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.listCategories::-webkit-scrollbar {
+    display: none;
+}
+
+.categoryBox .listCategories .btn-list-item{
+    font-size: 1rem;
+    color: $white;
+    background: $midDark;
+    border: 0;
+    border-radius: 43px;
+    outline: 0;
+    padding: 6px 16px;
+    width: auto;
+    height: 35px;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.categoryBox .listCategories .btn-list-item:hover{
+    background: $darkHover;
+}
+
+.categoryBox .listCategories .btn-list-item.active{
+    background: $lightOrange;
+    color: $dark;
+}
+
+.categoryBox .listCategories .btn-list-item.active:hover{
+    background: $lightOrangeHover;
+    color: $white;
+}
+
+.productTittleCat {
+    font-size: 18px;
+    background: $dark;
+    margin: 18px 0 5px 30px;
+}

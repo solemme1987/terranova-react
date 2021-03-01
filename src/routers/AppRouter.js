@@ -15,7 +15,7 @@ export const AppRouter = () => {
 
     return(
       <Router>
-           <div>
+           <>
               <Switch>
                   <Route
                     path="/auth"
@@ -30,7 +30,7 @@ export const AppRouter = () => {
                    <Redirect to="/" />
               </Switch>
 
-             </div>
+             </>
       </Router>
    )
 }

@@ -1,0 +1,40 @@
+    .searchBar{
+       display: flex;
+       justify-content: space-between;
+       padding:0 30px;
+   }
+
+    .searchBar .btn-search-bar{
+       width: 29px;
+       height: 28px;
+       border: 1px solid $white;
+       border-radius: 7px ;
+       background: transparent;
+       color: $white;
+       outline: 0;
+   }
+
+    .searchBar .inputContainer{
+       width: 100%;
+       text-align: right;
+       margin-top: 0;
+       display: flex;
+       padding: 0 5px;
+   }
+
+    .searchBar .searchInput{
+       background: transparent;
+       border:0;
+       border-radius: 7px ;
+       height: 24px;
+       outline: 0;
+       transition: 0.2s ease-in-out;
+       width: 0;
+   }
+
+    .searchBar .searchInput.active{
+       border:1px solid $white;
+       color:$white;
+       padding-left: 10px;
+       flex-grow: 1;
+   }

@@ -1,2 +1,21 @@
 @import './base/settings';
+
+@import './components/login';
+
 @import './base/base';
+
+
+/*--------------------------------
+          COMPONENNTS
+----------------------------------*/
+@import './components/searchBar';
+
+@import './components/textAndLog';
+
+@import './components/categories';
+
+@import './components/productContainer';
+
+@import './components/product';
+
+@import './components/footer';

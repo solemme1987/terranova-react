@@ -1,0 +1,82 @@
+
+
+footer.menu-bar{
+    position: relative;
+    bottom:0 ;
+    width: 100%;
+    margin-bottom: 0;
+    /* background:red;s */
+}
+footer .menu-bar a{
+    color: $white;
+}
+footer .menu-bar a:visited{
+    color: $white;
+}
+footer .menu-bar a:active{
+    color: $white;
+}
+/* Doy formato a los botnes home y config */
+footer.menu-bar .inner-menu-bar i{
+    width: 45px;
+    height: 47px;
+    font-size: 35px;
+    color: $white;
+    outline: 0;
+    background:transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: 0.1s ease-in-out;
+}
+
+footer .inner-menu-bar i:hover{
+    font-size: 45px;
+}
+
+footer .car-button-container{
+    /* aporte jls */
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    background: $orange;
+    border-radius:50px ;
+    display: flex;
+    font-size: 30px;
+    height: 60px;
+    justify-content: center;
+    width: 60px;
+    z-index: 1;
+
+}
+
+footer .car-button-container span.quantity{
+    background: $lightOrange;
+    border:1px solid $white;
+    border-radius:  10px;
+    color:$dark;
+    font-size:12px;
+    margin-right: -7px;
+    margin-top: -35px;
+    padding:0 5px;
+    position: absolute;
+    right: 0;
+}
+
+footer .inner-menu-bar{
+    position: relative;
+    align-items: center;
+    background: $midDark;
+    /* bottom: 0; */
+    display: flex;
+    justify-content: space-between;
+    height: 49px;/* Tambien podria ser de 55px */
+    margin-top: 16px;
+    padding: 30px 30px 0 30px;
+    /* ESta linea me hace la figura de poligon en el menu bar */
+    clip-path: polygon(50% 14%, 100% 35%, 100% 100%, 0 100%, 0% 35%);
+    /* z-index: -1; */
+}
