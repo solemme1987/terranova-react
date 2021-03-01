@@ -10,7 +10,6 @@ import {
 
 import LoginScreen from '../components/login/LoginScreen';
 import {AuthRouter} from './AuthRouter';
-
 export const AppRouter = () => {
 
     return(

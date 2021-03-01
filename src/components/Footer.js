@@ -13,7 +13,9 @@ export const Footer = () => {
            </Link>
 
            <div className="inner-menu-bar">
+            <Link to="/auth/home">
               <i className="fas fa-home home"></i>
+            </Link>
               <i className="fas fa-cog open-menu"></i>
            </div>
 

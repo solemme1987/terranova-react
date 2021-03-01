@@ -24,7 +24,7 @@ const LoginScreen = () => {
             </div>
 
             <div className="circulo">
-
+                
             </div>
 
 

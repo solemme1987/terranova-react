@@ -1,16 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
+// import { Link } from 'react-router-dom'
+import { Header } from '../../containers/Header'
+import { ProductContainer } from '../../containers/ProductContainer'
+import { DataPay } from '../DataPay'
+import { Product } from '../Product'
+import { SearchBar } from '../SearchBar'
 
 const Cart = props => {
+    const clasN="searchBar carrito";
     return (
 
-        <div>
-           <Link to="/auth/home" >
-                    Atras
-         </Link>
-            <h1> csoy el cart</h1>
-        </div>
+        <>
+          <Header>
+              <SearchBar
+                clasN={clasN}
+              />
+          </Header>
+          <ProductContainer>
+              <Product />
+              <Product />
+              <Product />
+              <Product />
+              <Product />
+              <Product />
+          </ProductContainer>
+          <DataPay />
+        </>
     )
 }
 

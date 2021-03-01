@@ -1,0 +1,56 @@
+.dataPay{
+  padding: 0px 30px 0 30px;
+  color: $lightOrange;
+//   min-height: 290px;
+}
+
+ .payGrid{
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: $midDark;
+    padding-top: 27px;
+    border-bottom: 1px solid $lightOrange;
+    border-bottom-style: dashed;
+}
+
+ .payGrid .rowPay{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 27px 10px 27px;
+      line-height: 15px;
+}
+.totalPay{
+    background: $midDark;
+}
+
+.totalPay .rowTotal{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.payButonBox{
+    display: flex;
+    justify-content: center;
+}
+
+.payButonBox button{
+ color:$white;
+  background: $orange;
+  margin: 10px 0;
+  width: 200px;
+  padding: 10px 10px;
+  border-radius:11px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payButonBox button i { 
+    margin-left: 10px;
+    font-size: 20px;
+}

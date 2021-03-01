@@ -4,9 +4,6 @@ import Cart from '../components/auth/Cart';
 import Home from '../components/auth/Home';
 import ProductView from '../components/auth/ProductView';
 
-
-
-
 export const AuthRouter=()=>{
     return (
         <>

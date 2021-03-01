@@ -1,0 +1,107 @@
+{
+  "infoBtn":[
+    {
+
+      "butonClass":"btn alter  ",
+      "value":"c"
+    },
+    {
+
+      "butonClass":"btn opera parentesis  ",
+      "value":"()"
+    },
+    {
+
+      "butonClass":"btn opera  ",
+      "value":"%"
+    },
+    {
+
+      "butonClass":"btn opera  ",
+      "value":"÷"
+    },
+    {
+
+      "butonClass":"btn numero  ",
+      "value":"7"
+    },
+    {
+
+      "butonClass":"btn numero  ",
+      "value":"8"
+    },
+    {
+
+      "butonClass":"btn numero  ",
+      "value":"9"
+    },
+    {
+
+      "butonClass":"btn opera  ",
+      "value":"x"
+    },
+    {
+
+      "butonClass":"btn numero ",
+      "value":"4"
+    },
+    {
+
+      "butonClass":"btn numero ",
+      "value":"5"
+    },
+    {
+
+      "butonClass":"btn numero  ",
+      "value":"6"
+    },
+    {
+
+      "butonClass":"btn opera  ",
+      "value":"-"
+    },
+    {
+
+      "butonClass":"btn numero  ",
+      "value":"1"
+    },
+    {
+
+      "butonClass":"btn numero  ",
+      "value":"2"
+    },
+    {
+
+      "butonClass":"btn numero  ",
+      "value":"3"
+    },
+    {
+
+      "butonClass":"btn opera  ",
+      "value":"+"
+    },
+    {
+
+      "butonClass":"btn opera ope2 ",
+      "value":"+/-"
+    },
+    {
+
+      "butonClass":"btn numero ",
+      "value":"0"
+    },
+    {
+
+      "butonClass":"btn opera ope2 ",
+      "value":"."
+    },
+    {
+
+      "butonClass":"btn    igual",
+      "value":"="
+    }
+    
+
+]
+
+}

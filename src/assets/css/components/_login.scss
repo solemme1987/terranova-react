@@ -47,13 +47,11 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   position: absolute;
-
 }
 
 .logo-index-container img{
   width: 200px;
   height: 200px;
-
 }
 @keyframes fly{
   from{
@@ -62,12 +60,9 @@
 }
 
 .circulo{
-  position: absolute;
-  width: 748px;
-  height: 763px;
-  left: -26px;
-  top: -300px;
-  border-radius:50%;
+  width:100%;
+  height: 60vh;
+  border-bottom-left-radius: 100% 50%;
   background:$lightOrange;
 }
 
@@ -76,7 +71,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top:475px;
 }
 
 .text-box h1{
@@ -93,8 +87,7 @@
 }
 
 .btn-box{
-  margin-bottom: 35px;
-  position: fixed;
+  margin-bottom: 20px;
   bottom: 0;
 }
 
@@ -132,9 +125,6 @@
 
   }
 
-  .text-box {
-    margin-top:550px;
-  }
   .text-box h1{
     font-size: 28px;
   }
