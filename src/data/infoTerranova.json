@@ -12,7 +12,7 @@
     },
    {
       "id":2,
-      "categoria":"salchipaps",
+      "categoria":"papas",
       "nameProduct":"Papa Nova",
       "minidesc":"Mas Vendido",
       "price":"13900",
@@ -22,7 +22,7 @@
    },
    {
       "id":3,
-      "categoria":"salchipaps",
+      "categoria":"papas",
       "nameProduct":"Papa Hawaiana",
       "minidesc":"Paras disfrutar",
       "price":"12900",
@@ -42,7 +42,7 @@
    },
    {
       "id":5,
-      "categoria":"salchipaps",
+      "categoria":"papas",
       "nameProduct":"Maduritas x3",
       "minidesc":"Una delicia",
       "price":"20.800",
@@ -133,7 +133,7 @@
    {
       "id":14,
       "categoria":"hamburguesas",
-      "nameProduct":"Hamburguesa doble",
+      "nameProduct":"Big Nova Doble Carne",
       "minidesc":"Mas para ti",
       "price":"20400",
       "info":"Pan artesanl, carne de la casa, queso americano, tocino, ",
@@ -149,7 +149,47 @@
       "info":"Pan artesanal, carne de la casa,tocineta,queso americano, cebolla carmelizada, lechuga y tomate ",
       "imgThumbs":"https://i.ibb.co/5cDZPZB/de-la-casa-Thumbs.png",
       "img-Detail":"https://i.ibb.co/YcDY4W5/delacasa-Detail.png"
+   },
+   {
+      "id":16,
+      "categoria":"hamburguesas",
+      "nameProduct":"Big Nova Triple Carne",
+      "minidesc":"Mas Vendido",
+      "price":"25900",
+      "info":"Pan artesanal, carne de la casa,tocineta,queso americano, cebolla carmelizada, lechuga y tomate ",
+      "imgThumbs":"https://i.ibb.co/cvgkqVq/hamburguesa-Trile-Thumb.png",
+      "img-Detail":"https://i.ibb.co/C13byVv/hamburegesa-Triple-Details.png"
+   },
+   {
+      "id":17,
+      "categoria":"papas",
+      "nameProduct":"Papas Mexicanas",
+      "minidesc":"Echale Ganas Carnal",
+      "price":"13400",
+      "info":"Papas, salchichas, queso fundido carne molida paprikay jalpeños",
+      "imgThumbs":"https://i.ibb.co/ZKGJ616/mexicanaspaps-Thum.png",
+      "img-Detail":"https://i.ibb.co/ck8znKZ/mexicanas-Detailpaps.png"
+   },
+   {
+      "id":18,
+      "categoria":"papas",
+      "nameProduct":"Maduritas x2",
+      "minidesc":"Una delicia",
+      "price":"16400",
+      "info":"Papas ,salchicha, carne, pollo desmechado,maduro queso fundido",
+      "imgThumbs":"https://i.ibb.co/CPNKJpm/maduritosx2-Thumbs.png",
+      "img-Detail":"https://i.ibb.co/sRVrYbk/maduritosx2-Detail.png"
+   },{
+      "id":19,
+      "categoria":"hamburguesas",
+      "nameProduct":"Big Nova Calle",
+      "minidesc":"Estilo Urbano",
+      "price":"18900",
+      "info":"Pan artesanal, carne de la casa, pollo, carne en salsa BBQ, queso blanco, verduras",
+      "imgThumbs":"https://i.ibb.co/QPD3LsC/callejerathumbs.png",
+      "img-Detail":"https://i.ibb.co/q0zPZz7/callejeradetails.png"
    }
+
   ]
 }
 
