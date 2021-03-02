@@ -1,15 +1,10 @@
 import React from 'react'
 import {Link } from 'react-router-dom'
-// import imgProduct from '../assets/img/hamburg/hmgcasa.png'
+
 export const Product = ({id,nameProduct,minidesc,price,imgThumbs}) => {
 
-
-
-    // const [image, setImage] = useState(imgThumbs);
-
-       console.log(imgThumbs)
     return (
-        <div className="card-product">
+        <div className="card-product animated fadeIn">
 
             <img src={imgThumbs} alt="Imagen producto" className="card-img" />
 

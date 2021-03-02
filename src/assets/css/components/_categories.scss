@@ -33,6 +33,7 @@
     height: 35px;
     margin-right: 10px;
     transition: 0.3s ease-in-out;
+    text-transform:capitalize;
 }
 
 .categoryBox .listCategories .btn-list-item:hover{
@@ -45,12 +46,13 @@
 }
 
 .categoryBox .listCategories .btn-list-item.active:hover{
-    background: $lightOrangeHover;
-    color: $white;
+    // background: $lightOrangeHover;
+    // color: $white;
 }
 
 .productTittleCat {
     font-size: 18px;
     background: $dark;
     margin: 18px 0 5px 30px;
+    text-transform: capitalize;
 }

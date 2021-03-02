@@ -2,194 +2,234 @@
    "infoProduct":[
     {
        "id":1,
-       "categoria":"salchipaps",
+       "category":"salchipapas",
        "nameProduct":"Mundo Nova",
        "minidesc":"Mas Vendido",
        "price":"26000",
        "info":"Pollo y carne desmachado en salsa bbq , costilla con guacamole , chorizo con chimichurri, papas fosforito, Papas francesas , queso fundido y salchicha",
        "imgThumbs":" https://i.ibb.co/hLYnFRY/mundonova-Thum.png",
-       "img-Detail":"https://i.ibb.co/hB3bLFg/mundonova-Detail.png"
+       "img-Detail":"https://i.ibb.co/hB3bLFg/mundonova-Detail.png",
+       "recommended":1
     },
    {
       "id":2,
-      "categoria":"papas",
+      "category":"papas",
       "nameProduct":"Papa Nova",
       "minidesc":"Mas Vendido",
       "price":"13900",
       "info":"Papas a la francesa,salchicha,queso fundido,pollo apanado, salsa de miel y mostaza",
       "imgThumbs":"https://i.ibb.co/ZgYPX1N/papas-Novathum.png",
-      "img-Detail":"https://i.ibb.co/JkL0hJt/papas-Nova-Detail.png"
+      "img-Detail":"https://i.ibb.co/JkL0hJt/papas-Nova-Detail.png",
+      "recommended":0
    },
    {
       "id":3,
-      "categoria":"papas",
+      "category":"papas",
       "nameProduct":"Papa Hawaiana",
       "minidesc":"Paras disfrutar",
       "price":"12900",
       "info":"Papas ,salchicha,queso fundido,ptrozos de piña especial, jamón",
       "imgThumbs":"https://i.ibb.co/mDhwjMR/hawaianathums.png",
-      "img-Detail":"https://i.ibb.co/Lp0xzHL/hawaian-detail.png"
+      "img-Detail":"https://i.ibb.co/Lp0xzHL/hawaian-detail.png",
+      "recommended":0
    },
    {
       "id":4,
-      "categoria":"salchipaps",
+      "category":"salchipapas",
       "nameProduct":"Choripapas",
       "minidesc":"Paras disfrutar",
       "price":"13400",
       "info":"Papas ,chorizos ternera,salchichas,tocineta, queso fundido,maixcito y salsa de la casa",
       "imgThumbs":"https://i.ibb.co/0mQrgTs/paparanchera-Detail.png",
-      "img-Detail":"https://i.ibb.co/YcMwXW2/pap-Rancherathumb.png"
+      "img-Detail":"https://i.ibb.co/YcMwXW2/pap-Rancherathumb.png",
+      "recommended":0
    },
    {
       "id":5,
-      "categoria":"papas",
+      "category":"papas",
       "nameProduct":"Maduritas x3",
       "minidesc":"Una delicia",
       "price":"20.800",
       "info":"Papas ,salchicha, carne, pollo desmechado, chorizo argentino,maduro queso fundido",
       "imgThumbs":"https://i.ibb.co/ZXm6fds/maduritothumbs.png",
-      "img-Detail":"https://i.ibb.co/TbkZ60p/madurito-Detail.png"
+      "img-Detail":"https://i.ibb.co/TbkZ60p/madurito-Detail.png",
+      "recommended":0
    },
    {
       "id":6,
-      "categoria":"salchipaps",
+      "category":"salchipapas",
       "nameProduct":"Costipapas 300g",
       "minidesc":"Una delicia",
       "price":"16.900",
       "info":"Papas a la francesa,salchichas, costillas, salsa de la casa",
       "imgThumbs":"https://i.ibb.co/VTKWJBS/costipapahtumbs.png",
-      "img-Detail":"https://i.ibb.co/GFg5v63/costipaps-Detail.png"
+      "img-Detail":"https://i.ibb.co/GFg5v63/costipaps-Detail.png",
+      "recommended":0
    },
    {
       "id":7,
-      "categoria":"salchipaps",
+      "category":"salchipapas",
       "nameProduct":"Costipapas 150g",
       "minidesc":"Una delicia",
       "price":"13.900",
       "info":"Papas a la francesa,salchichas, costillas, salsa de la casa",
       "imgThumbs":"https://i.ibb.co/VTKWJBS/costipapahtumbs.png",
-      "img-Detail":"https://i.ibb.co/GFg5v63/costipaps-Detail.png"
+      "img-Detail":"https://i.ibb.co/GFg5v63/costipaps-Detail.png",
+      "recommended":1
    },
    {
       "id":8,
-      "categoria":"perros",
+      "category":"perros",
       "nameProduct":"Perro Hawaiano",
       "minidesc":"Recomendado de la casa",
       "price":"15.900",
       "info":"Papas a la francesa,salchichas, costillas, salsa de la casa",
       "imgThumbs":"https://i.ibb.co/vwgmqfb/perro-Hawaiano-Thumbs.png",
-      "img-Detail":"https://i.ibb.co/CVxxcyt/perrohawaiano-Detail.png"
+      "img-Detail":"https://i.ibb.co/CVxxcyt/perrohawaiano-Detail.png",
+      "recommended":0
    },
    {
       "id":9,
-      "categoria":"perros",
+      "category":"perros",
       "nameProduct":"Perro Con Champiñones",
       "minidesc":"para Todos los gustos",
       "price":"16.400",
       "info":"Papas a la francesa,salchichas, costillas, salsa de la casa",
       "imgThumbs":"https://i.ibb.co/wLMLbwR/perroconchampi-ones-Thumbs.png",
-      "img-Detail":"https://i.ibb.co/n1wmnx2/perroconchampi-ones-Detail.png"
+      "img-Detail":"https://i.ibb.co/n1wmnx2/perroconchampi-ones-Detail.png",
+      "recommended":0
    },
    {
       "id":10,
-      "categoria":"perros",
+      "category":"perros",
       "nameProduct":"Perro Caliente de carne",
       "minidesc":"Variamos para tu paldar",
       "price":"13900",
       "info":"Papas artesanal,chorizo de ternera, tocineta,carne desmechado,queso blanco, cebolla caramelizada y lechuga ",
       "imgThumbs":"https://i.ibb.co/kggPMxs/perro-Concarne-Thumb.png",
-      "img-Detail":"https://i.ibb.co/3MbM3CM/perro-Concarne-Detail.png"
+      "img-Detail":"https://i.ibb.co/3MbM3CM/perro-Concarne-Detail.png",
+      "recommended":1
    },
    {
       "id":11,
-      "categoria":"perros",
+      "category":"perros",
       "nameProduct":"Perro Caliente de pollo",
       "minidesc":"Com0 lo prefieras",
       "price":"13900",
       "info":"Papas artesanal,chorizo de ternera, tocineta,pollo desmechado,,queso blanco, cebolla caramelizada y lechuga ",
       "imgThumbs":"https://i.ibb.co/kggPMxs/perro-Concarne-Thumb.png",
-      "img-Detail":"https://i.ibb.co/3MbM3CM/perro-Concarne-Detail.png"
+      "img-Detail":"https://i.ibb.co/3MbM3CM/perro-Concarne-Detail.png",
+      "recommended":0
    },
    {
       "id":12,
-      "categoria":"hamburguesas",
+      "category":"hamburguesas",
       "nameProduct":"Hamburguesa Argentina",
       "minidesc":"Recomendado de la casa",
       "price":"17900",
       "info":"Pan artesanl, carne de la casa, chorizo argentino, tocineta, queso americano, cebolla caramelizada,lechuga y tomate",
       "imgThumbs":"https://i.ibb.co/WHC1DV4/argentina-Thumbs.pngs",
-      "img-Detail":"https://i.ibb.co/1Q8jwb6/argentina-Details.png"
+      "img-Detail":"https://i.ibb.co/1Q8jwb6/argentina-Details.png",
+      "recommended":0
    },
    {
       "id":13,
-      "categoria":"hamburguesas",
+      "category":"hamburguesas",
       "nameProduct":"Hamburguesa Hawaiana",
       "minidesc":"Mas vendido",
       "price":"15900",
       "info":"Pan artesanl, carne de la casa, queso americano, tocino, ",
       "imgThumbs":"https://i.ibb.co/6nK5bkY/hamburguesa-hawaiana.png",
-      "img-Detail":"https://i.ibb.co/gV9gpht/hambursesahawaianadetail.png"
+      "img-Detail":"https://i.ibb.co/gV9gpht/hambursesahawaianadetail.png",
+      "recommended":0
    },
    {
       "id":14,
-      "categoria":"hamburguesas",
+      "category":"hamburguesas",
       "nameProduct":"Big Nova Doble Carne",
       "minidesc":"Mas para ti",
       "price":"20400",
       "info":"Pan artesanl, carne de la casa, queso americano, tocino, ",
       "imgThumbs":"https://i.ibb.co/zVyJsZp/hamburguesa-Doble-Thumbs.png",
-      "img-Detail":"https://i.ibb.co/QPNNsqg/hamburguesadoble-Details.png"
+      "img-Detail":"https://i.ibb.co/QPNNsqg/hamburguesadoble-Details.png",
+      "recommended":1
    },
    {
       "id":15,
-      "categoria":"hamburguesas",
+      "category":"hamburguesas",
       "nameProduct":"Hamburguesa de la casa",
       "minidesc":"Mas Vendido",
       "price":"14400",
       "info":"Pan artesanal, carne de la casa,tocineta,queso americano, cebolla carmelizada, lechuga y tomate ",
       "imgThumbs":"https://i.ibb.co/5cDZPZB/de-la-casa-Thumbs.png",
-      "img-Detail":"https://i.ibb.co/YcDY4W5/delacasa-Detail.png"
+      "img-Detail":"https://i.ibb.co/YcDY4W5/delacasa-Detail.png",
+      "recommended":0
    },
    {
       "id":16,
-      "categoria":"hamburguesas",
+      "category":"hamburguesas",
       "nameProduct":"Big Nova Triple Carne",
       "minidesc":"Mas Vendido",
       "price":"25900",
       "info":"Pan artesanal, carne de la casa,tocineta,queso americano, cebolla carmelizada, lechuga y tomate ",
       "imgThumbs":"https://i.ibb.co/cvgkqVq/hamburguesa-Trile-Thumb.png",
-      "img-Detail":"https://i.ibb.co/C13byVv/hamburegesa-Triple-Details.png"
+      "img-Detail":"https://i.ibb.co/C13byVv/hamburegesa-Triple-Details.png",
+      "recommended":1
    },
    {
       "id":17,
-      "categoria":"papas",
+      "category":"papas",
       "nameProduct":"Papas Mexicanas",
       "minidesc":"Echale Ganas Carnal",
       "price":"13400",
       "info":"Papas, salchichas, queso fundido carne molida paprikay jalpeños",
       "imgThumbs":"https://i.ibb.co/ZKGJ616/mexicanaspaps-Thum.png",
-      "img-Detail":"https://i.ibb.co/ck8znKZ/mexicanas-Detailpaps.png"
+      "img-Detail":"https://i.ibb.co/ck8znKZ/mexicanas-Detailpaps.png",
+      "recommended":0
    },
    {
       "id":18,
-      "categoria":"papas",
+      "category":"papas",
       "nameProduct":"Maduritas x2",
       "minidesc":"Una delicia",
       "price":"16400",
       "info":"Papas ,salchicha, carne, pollo desmechado,maduro queso fundido",
       "imgThumbs":"https://i.ibb.co/CPNKJpm/maduritosx2-Thumbs.png",
-      "img-Detail":"https://i.ibb.co/sRVrYbk/maduritosx2-Detail.png"
+      "img-Detail":"https://i.ibb.co/sRVrYbk/maduritosx2-Detail.png",
+      "recommended":1
    },{
       "id":19,
-      "categoria":"hamburguesas",
+      "category":"hamburguesas",
       "nameProduct":"Big Nova Calle",
       "minidesc":"Estilo Urbano",
       "price":"18900",
       "info":"Pan artesanal, carne de la casa, pollo, carne en salsa BBQ, queso blanco, verduras",
       "imgThumbs":"https://i.ibb.co/QPD3LsC/callejerathumbs.png",
-      "img-Detail":"https://i.ibb.co/q0zPZz7/callejeradetails.png"
+      "img-Detail":"https://i.ibb.co/q0zPZz7/callejeradetails.png",
+      "recommended":1
    }
-
+  ],
+  "categories":[
+     {
+       "id":1,
+       "nameCat":"recomendados"
+     },
+     {
+      "id":2,
+      "nameCat":"hamburguesas"
+     },
+     {
+      "id":3,
+      "nameCat":"perros"
+     },
+     {
+      "id":4,
+      "nameCat":"salchipapas"
+     },
+     {
+      "id":5,
+      "nameCat":"papas"
+     }
   ]
 }
 
