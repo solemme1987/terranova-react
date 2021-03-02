@@ -1,107 +1,46 @@
 {
-  "infoBtn":[
+   "infoProduct":[
     {
-
-      "butonClass":"btn alter  ",
-      "value":"c"
+       "id":1,
+       "categoria":"salchipaps",
+       "nameProduct":"Mundo Nova",
+       "minidesc":"Mas Vendido",
+       "price":"26000",
+       "info":"Pollo y carne desmachado en salsa bbq , costilla con guacamole , chorizo con chimichurri, papas fosforito, Papas francesas , queso fundido y salchicha",
+       "imgThumbs":" https://i.ibb.co/hLYnFRY/mundonova-Thum.png",
+       "img-Detail":"https://i.ibb.co/hB3bLFg/mundonova-Detail.png"
     },
-    {
-
-      "butonClass":"btn opera parentesis  ",
-      "value":"()"
-    },
-    {
-
-      "butonClass":"btn opera  ",
-      "value":"%"
-    },
-    {
-
-      "butonClass":"btn opera  ",
-      "value":"÷"
-    },
-    {
-
-      "butonClass":"btn numero  ",
-      "value":"7"
-    },
-    {
-
-      "butonClass":"btn numero  ",
-      "value":"8"
-    },
-    {
-
-      "butonClass":"btn numero  ",
-      "value":"9"
-    },
-    {
-
-      "butonClass":"btn opera  ",
-      "value":"x"
-    },
-    {
-
-      "butonClass":"btn numero ",
-      "value":"4"
-    },
-    {
-
-      "butonClass":"btn numero ",
-      "value":"5"
-    },
-    {
-
-      "butonClass":"btn numero  ",
-      "value":"6"
-    },
-    {
-
-      "butonClass":"btn opera  ",
-      "value":"-"
-    },
-    {
-
-      "butonClass":"btn numero  ",
-      "value":"1"
-    },
-    {
-
-      "butonClass":"btn numero  ",
-      "value":"2"
-    },
-    {
-
-      "butonClass":"btn numero  ",
-      "value":"3"
-    },
-    {
-
-      "butonClass":"btn opera  ",
-      "value":"+"
-    },
-    {
-
-      "butonClass":"btn opera ope2 ",
-      "value":"+/-"
-    },
-    {
-
-      "butonClass":"btn numero ",
-      "value":"0"
-    },
-    {
-
-      "butonClass":"btn opera ope2 ",
-      "value":"."
-    },
-    {
-
-      "butonClass":"btn    igual",
-      "value":"="
-    }
-    
-
-]
-
+   {
+      "id":2,
+      "categoria":"salchipaps",
+      "nameProduct":"Papa Nova",
+      "minidesc":"Mas Vendido",
+      "price":"13900",
+      "info":"Papas a la francesa,salchicha,queso fundido,pollo apanado, salsa de miel y mostaza",
+      "imgThumbs":"https://i.ibb.co/ZgYPX1N/papas-Novathum.png",
+      "img-Detail":"https://i.ibb.co/JkL0hJt/papas-Nova-Detail.png"
+   },
+   {
+      "id":3,
+      "categoria":"salchipaps",
+      "nameProduct":"Papa Hawaiana",
+      "minidesc":"Paras disfrutar",
+      "price":"12900",
+      "info":"Papas ,salchicha,queso fundido,ptrozos de piña especial, jamón",
+      "imgThumbs":"https://i.ibb.co/mDhwjMR/hawaianathums.png",
+      "img-Detail":"https://i.ibb.co/Lp0xzHL/hawaian-detail.png"
+   },
+   {
+      "id":4,
+      "categoria":"salchipaps",
+      "nameProduct":"Choripapas",
+      "minidesc":"Paras disfrutar",
+      "price":"13400",
+      "info":"Papas ,chorizos ternera,salchichas,tocineta, queso fundido,maixcito y salsa de la casa",
+      "imgThumbs":"https://i.ibb.co/0mQrgTs/paparanchera-Detail.png",
+      "img-Detail":"https://i.ibb.co/YcMwXW2/pap-Rancherathumb.png"
+   }
+  ]
 }
+
+

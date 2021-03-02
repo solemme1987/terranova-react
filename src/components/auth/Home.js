@@ -7,8 +7,12 @@ import { Product } from '../Product'
 import { SearchBar } from '../SearchBar'
 import { TextAndLogo } from '../TextAndLogo'
 
+import {infoProduct} from '../../data/infoTerranova.json';
+
 
 function Home() {
+
+
     return (
         <>
             <Header>
@@ -19,11 +23,17 @@ function Home() {
             <Categories />
 
              <ProductContainer>
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
+               {
+                  infoProduct.map(({id,nameProduct,minidesc,price,imgThumbs})=>(
+                        <Product
+                            key={id}
+                            nameProduct={nameProduct}
+                            minidesc={minidesc}
+                            price={price}
+                            imgThumbs={imgThumbs}
+                        />
+                    ))
+                }
              </ProductContainer>
 
              <Footer />
