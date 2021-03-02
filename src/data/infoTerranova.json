@@ -39,8 +39,121 @@
       "info":"Papas ,chorizos ternera,salchichas,tocineta, queso fundido,maixcito y salsa de la casa",
       "imgThumbs":"https://i.ibb.co/0mQrgTs/paparanchera-Detail.png",
       "img-Detail":"https://i.ibb.co/YcMwXW2/pap-Rancherathumb.png"
+   },
+   {
+      "id":5,
+      "categoria":"salchipaps",
+      "nameProduct":"Maduritas x3",
+      "minidesc":"Una delicia",
+      "price":"20.800",
+      "info":"Papas ,salchicha, carne, pollo desmechado, chorizo argentino,maduro queso fundido",
+      "imgThumbs":"https://i.ibb.co/ZXm6fds/maduritothumbs.png",
+      "img-Detail":"https://i.ibb.co/TbkZ60p/madurito-Detail.png"
+   },
+   {
+      "id":6,
+      "categoria":"salchipaps",
+      "nameProduct":"Costipapas 300g",
+      "minidesc":"Una delicia",
+      "price":"16.900",
+      "info":"Papas a la francesa,salchichas, costillas, salsa de la casa",
+      "imgThumbs":"https://i.ibb.co/VTKWJBS/costipapahtumbs.png",
+      "img-Detail":"https://i.ibb.co/GFg5v63/costipaps-Detail.png"
+   },
+   {
+      "id":7,
+      "categoria":"salchipaps",
+      "nameProduct":"Costipapas 150g",
+      "minidesc":"Una delicia",
+      "price":"13.900",
+      "info":"Papas a la francesa,salchichas, costillas, salsa de la casa",
+      "imgThumbs":"https://i.ibb.co/VTKWJBS/costipapahtumbs.png",
+      "img-Detail":"https://i.ibb.co/GFg5v63/costipaps-Detail.png"
+   },
+   {
+      "id":8,
+      "categoria":"perros",
+      "nameProduct":"Perro Hawaiano",
+      "minidesc":"Recomendado de la casa",
+      "price":"15.900",
+      "info":"Papas a la francesa,salchichas, costillas, salsa de la casa",
+      "imgThumbs":"https://i.ibb.co/vwgmqfb/perro-Hawaiano-Thumbs.png",
+      "img-Detail":"https://i.ibb.co/CVxxcyt/perrohawaiano-Detail.png"
+   },
+   {
+      "id":9,
+      "categoria":"perros",
+      "nameProduct":"Perro Con Champiñones",
+      "minidesc":"para Todos los gustos",
+      "price":"16.400",
+      "info":"Papas a la francesa,salchichas, costillas, salsa de la casa",
+      "imgThumbs":"https://i.ibb.co/wLMLbwR/perroconchampi-ones-Thumbs.png",
+      "img-Detail":"https://i.ibb.co/n1wmnx2/perroconchampi-ones-Detail.png"
+   },
+   {
+      "id":10,
+      "categoria":"perros",
+      "nameProduct":"Perro Caliente de carne",
+      "minidesc":"Variamos para tu paldar",
+      "price":"13900",
+      "info":"Papas artesanal,chorizo de ternera, tocineta,carne desmechado,queso blanco, cebolla caramelizada y lechuga ",
+      "imgThumbs":"https://i.ibb.co/kggPMxs/perro-Concarne-Thumb.png",
+      "img-Detail":"https://i.ibb.co/3MbM3CM/perro-Concarne-Detail.png"
+   },
+   {
+      "id":11,
+      "categoria":"perros",
+      "nameProduct":"Perro Caliente de pollo",
+      "minidesc":"Com0 lo prefieras",
+      "price":"13900",
+      "info":"Papas artesanal,chorizo de ternera, tocineta,pollo desmechado,,queso blanco, cebolla caramelizada y lechuga ",
+      "imgThumbs":"https://i.ibb.co/kggPMxs/perro-Concarne-Thumb.png",
+      "img-Detail":"https://i.ibb.co/3MbM3CM/perro-Concarne-Detail.png"
+   },
+   {
+      "id":12,
+      "categoria":"hamburguesas",
+      "nameProduct":"Hamburguesa Argentina",
+      "minidesc":"Recomendado de la casa",
+      "price":"17900",
+      "info":"Pan artesanl, carne de la casa, chorizo argentino, tocineta, queso americano, cebolla caramelizada,lechuga y tomate",
+      "imgThumbs":"https://i.ibb.co/WHC1DV4/argentina-Thumbs.pngs",
+      "img-Detail":"https://i.ibb.co/1Q8jwb6/argentina-Details.png"
+   },
+   {
+      "id":13,
+      "categoria":"hamburguesas",
+      "nameProduct":"Hamburguesa Hawaiana",
+      "minidesc":"Mas vendido",
+      "price":"15900",
+      "info":"Pan artesanl, carne de la casa, queso americano, tocino, ",
+      "imgThumbs":"https://i.ibb.co/6nK5bkY/hamburguesa-hawaiana.png",
+      "img-Detail":"https://i.ibb.co/gV9gpht/hambursesahawaianadetail.png"
+   },
+   {
+      "id":14,
+      "categoria":"hamburguesas",
+      "nameProduct":"Hamburguesa doble",
+      "minidesc":"Mas para ti",
+      "price":"20400",
+      "info":"Pan artesanl, carne de la casa, queso americano, tocino, ",
+      "imgThumbs":"https://i.ibb.co/zVyJsZp/hamburguesa-Doble-Thumbs.png",
+      "img-Detail":"https://i.ibb.co/QPNNsqg/hamburguesadoble-Details.png"
+   },
+   {
+      "id":15,
+      "categoria":"hamburguesas",
+      "nameProduct":"Hamburguesa de la casa",
+      "minidesc":"Mas Vendido",
+      "price":"14400",
+      "info":"Pan artesanal, carne de la casa,tocineta,queso americano, cebolla carmelizada, lechuga y tomate ",
+      "imgThumbs":"https://i.ibb.co/5cDZPZB/de-la-casa-Thumbs.png",
+      "img-Detail":"https://i.ibb.co/YcDY4W5/delacasa-Detail.png"
    }
   ]
 }
+
+
+
 
 
