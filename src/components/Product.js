@@ -29,7 +29,6 @@ const {cart, setCart} = useContext(Context)
 
            }
            if (cart.length===0){
-              console.log('El carrito esta vacio')
               setCart(c=>c=[...c,proAdd])
            }else{
              addIntemCart(proAdd)
@@ -90,7 +89,7 @@ const {cart, setCart} = useContext(Context)
         const duplicate= cart.some(pro=>pro.id===proSub.id)
 
         if(duplicate){
-           console.log('el id  se encuentra registrado par restar')
+           
             const products = cart.map(produ=>{
 
                if(produ.id===proSub.id){
@@ -101,7 +100,7 @@ const {cart, setCart} = useContext(Context)
                }
 
             });
-            console.log(products)
+          
             setCart(c=>c=[...products])
         }
         else{

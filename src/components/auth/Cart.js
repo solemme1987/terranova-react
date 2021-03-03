@@ -12,9 +12,9 @@ const {cart} = useContext(Context)
 
 
 
- for (const iterator of cart) {
-     console.log(`${iterator.nameProduct } ${iterator.price}`)
- }
+//  for (const iterator of cart) {
+//      console.log(`${iterator.nameProduct } ${iterator.price}`)
+//  }
 
 
     const clasN="searchBar carrito";
