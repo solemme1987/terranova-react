@@ -89,7 +89,7 @@ const {cart, setCart} = useContext(Context)
         const duplicate= cart.some(pro=>pro.id===proSub.id)
 
         if(duplicate){
-           
+
             const products = cart.map(produ=>{
 
                if(produ.id===proSub.id){
@@ -100,12 +100,21 @@ const {cart, setCart} = useContext(Context)
                }
 
             });
-          
+
             setCart(c=>c=[...products])
         }
         else{
           setCart(c=>c=[...c,proSub])
         }
+
+        // ELINMINO EL PRODUCTO QUE ESTÉ EN 0 EN EL CARRITO
+        cart.forEach((prodToDelete, idx) => {
+          if(prodToDelete.quantity===0){
+              setCart((deltPro)=> deltPro = deltPro.filter((pro)=>pro!==prodToDelete))
+          }
+
+        });
+
       }
 
 
