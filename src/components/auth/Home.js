@@ -31,6 +31,7 @@ function Home() {
     productRender=[...productFinded];
  }
 
+
     return (
         <>
             <Header>

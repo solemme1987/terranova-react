@@ -27,12 +27,13 @@ function App() {
       setCart
   }
 
+
   return (
     <Context.Provider value={dataContext}>
        <AppRouter />
     </Context.Provider>
   );
-  
+
 }
 
 export default App;

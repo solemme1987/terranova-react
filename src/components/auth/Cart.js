@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 // import { Link } from 'react-router-dom'
 import { Header } from '../../containers/Header'
 import { ProductContainer } from '../../containers/ProductContainer'
+import { Context } from '../context/Context'
 import { DataPay } from '../DataPay'
 import { Product } from '../Product'
 import { SearchBar } from '../SearchBar'
 
-const Cart = props => {
+const Cart = ()=> {
+const {cart} = useContext(Context)
+
+
+
+ for (const iterator of cart) {
+     console.log(`${iterator.nameProduct } ${iterator.price}`)
+ }
+
+
     const clasN="searchBar carrito";
     return (
 
@@ -17,12 +27,20 @@ const Cart = props => {
               />
           </Header>
           <ProductContainer>
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
+              {
+               cart.map(({id,nameProduct,minidesc,price,imgThumbs,quantity,totalCart})=>(
+                        <Product
+                            key={id}
+                            nameProduct={nameProduct}
+                            minidesc={minidesc}
+                            price={price}
+                            imgThumbs={imgThumbs}
+                            id={id}
+                            quantity={quantity}
+                            totalCart={price*quantity}
+                        />
+                    ))
+}
           </ProductContainer>
           <DataPay />
         </>
