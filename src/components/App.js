@@ -11,7 +11,6 @@ function App() {
   const [productFinded, setProductFinded] = useState([]);
 
 
-
   let dataContext={
       idcategori,//id e la categoria
       setIdCategori,//funcionpar el id e la categoria
@@ -25,12 +24,12 @@ function App() {
       productFinded
   }
 
-
   return (
     <Context.Provider value={dataContext}>
        <AppRouter />
     </Context.Provider>
   );
+  
 }
 
 export default App;

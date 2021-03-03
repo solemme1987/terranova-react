@@ -19,6 +19,8 @@ export const Categories = () => {
         setIdCategori((idCategori)=>idCategori=categoriActived)
         setCategoriName((nameCat)=>nameCat=nameCategori)
         document.querySelector('#inputSearch').blur()
+        // Limpiamos el arreglo de productos buscados par 
+        //que se renderice de nuevo los productos
         setProductFinded(clear=>clear=[])
 
     }

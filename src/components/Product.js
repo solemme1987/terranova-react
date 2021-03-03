@@ -3,6 +3,12 @@ import {Link } from 'react-router-dom'
 
 export const Product = ({id,nameProduct,minidesc,price,imgThumbs}) => {
 
+    const formatter = new Intl.NumberFormat('es-CO', {
+        style: 'currency',
+        currency: 'COP',
+        minimumFractionDigits: 0
+    })
+
     return (
         <div className="card-product animated fadeIn">
 
@@ -17,7 +23,7 @@ export const Product = ({id,nameProduct,minidesc,price,imgThumbs}) => {
                     </Link>
                 </h3>
                 <p className="card-text">{minidesc}</p>
-                <p className="card-pay">{price}</p>
+                <p className="card-pay">{formatter.format(price)}</p>
             </div>
 
             <div className="card-butns">
