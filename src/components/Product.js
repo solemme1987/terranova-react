@@ -1,19 +1,101 @@
-import React, {  useRef, useState } from 'react'
-import {Link } from 'react-router-dom'
+import React, {  useContext, useRef, useState } from 'react'
+import { Context } from './context/Context'
+// import {Link } from 'react-router-dom'
 
 export const Product = ({id,nameProduct,minidesc,price,imgThumbs}) => {
-
+const {cart, setCart} = useContext(Context)
+            
+                // let provando=JSON.parse(localStorage.getItem('cart'));
+            //   console.log(provando)
       const productId = useRef()
 
       const [quantity, setQuantity] = useState(0)
+    //   const [cart, setCart] = useState(provando!=null ? provando: [])
+
+    //    localStorage.setItem('')
+
+     //  Agregamos producto al carrito HTML
       const handleAddQuantity =()=>{
-          setQuantity(quantity+1);
-           id=productId.current.id
+
+           setQuantity(quantity+1);
+
+        //    let idPro=productId.current.id;
+           let proAdd={
+               "id":id,
+               "quantity":quantity+1,
+               "name":nameProduct,
+               "price:":price
+           }
+
+          addIntemCart(proAdd)
+
       }
 
+    //  Agregamos producto al carrito LOCAL STORGE
+      function addIntemCart(prod){
+
+         const duplicate= cart.some(pro=>pro.id===prod.id)
+
+
+         if(duplicate){
+             const products = cart.map(produ=>{
+
+                if(produ.id===prod.id){
+                    produ.quantity++
+                    return  produ;
+                }else{
+                    return produ;
+                }
+
+             });
+             setCart([...products])
+         }
+         else{
+            setCart([...cart, prod]);
+         }
+
+
+      }
+
+
+    //   RESTANDO UNIDADES DEL CARRITO HTML
       const handleSubsQuantity =()=>{
         if(quantity>0){
               setQuantity(quantity-1);
+
+              let proSub={
+                "id":id,
+                "quantity":quantity-1,
+                "name":nameProduct,
+                "price:":price
+            }
+            subsItemCart(proSub)
+        }
+
+
+      }
+
+    //   RESTANDO UNIDADES DEL CARRITO LCAL STORAGE
+      function subsItemCart(prod){
+
+        const duplicate= cart.some(pro=>pro.id===prod.id)
+
+
+        if(duplicate){
+            const products = cart.map(produ=>{
+
+               if(produ.id===prod.id){
+                   produ.quantity--
+                   return  produ;
+               }else{
+                   return produ;
+               }
+
+            });
+            setCart([...products])
+        }
+        else{
+           setCart([...cart, prod]);
         }
       }
 
@@ -34,9 +116,9 @@ export const Product = ({id,nameProduct,minidesc,price,imgThumbs}) => {
 
             <div className="card-header">
                 <h3 className="card-tittle">
-                   <Link to="/auth/product">
+                   {/* <Link to="/auth/product"> */}
                         {nameProduct}
-                    </Link>
+                    {/* </Link> */}
                 </h3>
                 <p className="card-text">{minidesc}</p>
                 <p className="card-pay">{formatter.format(price)}</p>

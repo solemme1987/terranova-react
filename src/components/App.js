@@ -9,6 +9,7 @@ function App() {
   const [categoriName, setCategoriName] = useState("");
   const [dataSearch, setDataSearch] = useState("");
   const [productFinded, setProductFinded] = useState([]);
+  const [cart, setCart] = useState([]);
 
 
   let dataContext={
@@ -21,7 +22,9 @@ function App() {
       dataSearch, //Dato Buscado
       setDataSearch,//cambiar el dato buscado
       setProductFinded,
-      productFinded
+      productFinded,
+      cart,
+      setCart
   }
 
   return (
