@@ -1,7 +1,18 @@
-import React from 'react'
 import  logoHome from '../assets/img/main/logo.png'
 
 export const TextAndLogo = () => {
+    // const [hour, sethour] = useState('');
+
+    let date = new Date();
+
+    let openClose="" ;
+
+    if(date.getHours() >19 ){
+        openClose='Abierto';
+    }else{
+        openClose='Cerrado';
+    }
+
     return (
         <div className="tittleAndLogoBox">
 
@@ -14,7 +25,7 @@ export const TextAndLogo = () => {
 
             <div className="logoBox" id="logoBox">
                 <img src={logoHome} alt="Logo Terranova" className="logo" />
-                <p className="ranking"><i className="fas fa-star"></i> 4.7</p>
+                <p className="ranking">{openClose}</p>
             </div>
 
         </div>

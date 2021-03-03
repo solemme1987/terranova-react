@@ -1,16 +1,32 @@
-import React from 'react'
+import React, {  useRef, useState } from 'react'
 import {Link } from 'react-router-dom'
 
 export const Product = ({id,nameProduct,minidesc,price,imgThumbs}) => {
 
-    const formatter = new Intl.NumberFormat('es-CO', {
+      const productId = useRef()
+
+      const [quantity, setQuantity] = useState(0)
+      const handleAddQuantity =()=>{
+          setQuantity(quantity+1);
+           id=productId.current.id
+      }
+
+      const handleSubsQuantity =()=>{
+        if(quantity>0){
+              setQuantity(quantity-1);
+        }
+      }
+
+
+    //Asignamos formato a la moneda
+    const formatter = new Intl.NumberFormat('es-CO',{
         style: 'currency',
         currency: 'COP',
         minimumFractionDigits: 0
     })
 
     return (
-        <div className="card-product animated fadeIn">
+        <div className="card-product animated fadeIn" id={id} ref={productId}>
 
             <img src={imgThumbs} alt="Imagen producto" className="card-img" />
 
@@ -27,9 +43,11 @@ export const Product = ({id,nameProduct,minidesc,price,imgThumbs}) => {
             </div>
 
             <div className="card-butns">
-                <button className="subs">-</button>
-                <span className="quantity">0</span>
-                <button className="add">+</button>
+                <button className="subs" onClick={handleSubsQuantity}>-</button>
+                <span className="quantity">{quantity}</span>
+                <button className="add"
+                  onClick={handleAddQuantity }
+                >+</button>
             </div>
 
             </div>

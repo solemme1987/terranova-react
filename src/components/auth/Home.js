@@ -49,6 +49,7 @@ function Home() {
                             minidesc={minidesc}
                             price={price}
                             imgThumbs={imgThumbs}
+                            id={id}
                         />
                     ))
                 }
