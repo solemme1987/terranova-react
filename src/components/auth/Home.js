@@ -6,27 +6,32 @@ import { Footer } from '../Footer'
 import { Product } from '../Product'
 import { SearchBar } from '../SearchBar'
 import { TextAndLogo } from '../TextAndLogo'
-
-// data
-import {infoProduct} from '../../data/infoTerranova.json';
 import { Context } from '../context/Context'
-
 
 
 function Home() {
 
- const {categori,categoriName} = useContext(Context)
- let categoriRender =[];
+ const {idcategori,categoriName, infoProduct, productFinded} = useContext(Context)
+
+ let productRender =[];
+
 
 // Validamos que la primera pantalla solo muestre la categoria recomendados
+
  infoProduct.forEach(element => {
-     if(categori===1 && element.recommended===1 ){
-        categoriRender.push(element);
+
+     if(idcategori===1 && element.recommended===1 ){
+        productRender.push(element);
      }else if(element.category===categoriName && element.category!==1){
-        categoriRender.push(element);
+        productRender.push(element);
      }
  });
-   return (
+
+ if(productFinded.length > 0){
+    productRender=[...productFinded];
+ }
+
+    return (
         <>
             <Header>
                 <SearchBar />
@@ -35,9 +40,9 @@ function Home() {
 
             <Categories />
 
-             <ProductContainer>
-               {
-                  categoriRender.map(({id,nameProduct,minidesc,price,imgThumbs})=>(
+                <ProductContainer>
+                {
+                    productRender.map(({id,nameProduct,minidesc,price,imgThumbs})=>(
                         <Product
                             key={id}
                             nameProduct={nameProduct}
@@ -47,14 +52,13 @@ function Home() {
                         />
                     ))
                 }
-             </ProductContainer>
+                </ProductContainer>
 
-             <Footer />
+                <Footer />
 
         </>
     )
 }
-
 
 export default Home
 

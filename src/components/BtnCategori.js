@@ -6,7 +6,7 @@ export const BtnCategori = ({name,id,active,handleActive}) => {
           className={id===active ? "btn-list-item active" : "btn-list-item"}
           active={active}
           onClick={()=>handleActive(id,name)}
-          >
+        >
           {name}
         </button>
     )

@@ -1,13 +1,13 @@
 import React, { useContext, useState } from 'react'
 import { BtnCategori } from '../components/BtnCategori';
-import {categories} from '../data/infoTerranova.json';
+// import {categories} from '../data/infoTerranova.json';
 
 import {Context} from '../components/context/Context';
 
 
 export const Categories = () => {
 
-    const {setCategori,setCategoriName,categoriName} = useContext(Context);
+    const {setIdCategori,setCategoriName,categoriName,categories,setProductFinded} = useContext(Context);
 
     const [active, setActive] = useState(1)
 
@@ -16,10 +16,11 @@ export const Categories = () => {
     // y paso el id yel nombre al contex
     const handleActive=(categoriActived, nameCategori)=>{
         setActive(categoriActived);
-
-        setCategori((idCategori)=>idCategori=categoriActived)
+        setIdCategori((idCategori)=>idCategori=categoriActived)
         setCategoriName((nameCat)=>nameCat=nameCategori)
-        console.log(nameCategori)
+        document.querySelector('#inputSearch').blur()
+        setProductFinded(clear=>clear=[])
+
     }
 
     return (
