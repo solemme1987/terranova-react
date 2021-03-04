@@ -7,7 +7,7 @@ export const TextAndLogo = () => {
 
     let openClose="" ;
 
-    if(date.getHours() >19 ){
+    if(date.getHours() >17 ){
         openClose='Abierto';
     }else{
         openClose='Cerrado';

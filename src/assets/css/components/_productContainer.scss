@@ -4,7 +4,8 @@
         /* Estas dos uultimas lineas son de
         prueba para el scrol de los productos
         se pueden activar para ver la prueba */
-        height: 489px;/*debe tenr al menos 1 px de alto para que  el flxe 1 auto funcione*/
+        height: 1px;/*debe tenr al menos 1 px de alto para que  el flxe 1 auto funcione*/
+        // height: 489px; anterior mente tenia este que tambien funciona pero me genera scroll
         overflow: scroll;
         scroll-behavior: smooth;
         /*aqui aplico d2 propiedades 1 es flex grow 1 y flexgrw basic.
