@@ -4,14 +4,17 @@ import { Context } from './context/Context'
 
 export const Footer = () => {
 
-  const {cart} = useContext(Context)
+  const {cart, setShowSideBar} = useContext(Context)
 
    let plus =0;
 
     for(let item of cart){
       plus=plus+item.quantity
    }
-
+   
+   const showSideBar=()=>{
+       setShowSideBar(show=>show='side-bar active')
+   }
 
     return (
         <footer className="menu-bar">
@@ -27,7 +30,7 @@ export const Footer = () => {
             <Link to="/auth/home">
               <i className="fas fa-home home"></i>
             </Link>
-              <i className="fas fa-cog open-menu"></i>
+              <i className="fas fa-cog open-menu" onClick={showSideBar}></i>
            </div>
 
         </footer>

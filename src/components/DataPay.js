@@ -31,6 +31,10 @@ const formatter = new Intl.NumberFormat('es-CO',{
     return (
         <div className="dataPay">
             <div className="payGrid">
+            <div className="rowPay">
+                    <span className="payGridItem">Método de Pago</span>
+                    <span className="payGridItem">Nequi</span> 
+                </div>
                 <div className="rowPay">
                     <span className="payGridItem">Sub Total</span>
                     <span className="payGridItem">{formatter.format(subtotal>0 ? subtotal : 0)}</span>

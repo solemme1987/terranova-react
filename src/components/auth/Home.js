@@ -7,6 +7,7 @@ import { Product } from '../Product'
 import { SearchBar } from '../SearchBar'
 import { TextAndLogo } from '../TextAndLogo'
 import { Context } from '../context/Context'
+import { SideBar } from '../SideBar'
 
 
 function Home() {
@@ -34,6 +35,8 @@ function Home() {
 
     return (
         <>
+           <SideBar />
+
             <Header>
                 <SearchBar />
                 <TextAndLogo />

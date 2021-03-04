@@ -1,0 +1,90 @@
+aside.side-bar{
+    position: fixed;
+    background: linear-gradient(0deg,$midDark, $dark) ;
+    z-index: 5;
+    width: 230px;
+    height: 100vh;
+    bottom: 0;
+    right: -100%;
+
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+   }
+
+   aside.side-bar.active{
+       width: 230px;
+       right: 0;
+   }
+
+   aside .side-bar-title{
+       font-size: 22px;
+       text-align: center;
+       text-transform: capitalize;
+       margin-top: 30px;
+
+   }
+
+   aside .option-pay-container{
+       padding: 0 10px 0 0;
+       margin-top: 50px;
+   }
+
+   aside .option-pay-container .pay-tittle,.theme-tittle{
+       font-size: 16px;
+   }
+
+   /* --------------------------------
+      STILOS a LAS TARJETAS DE PAGO
+   ----------------------------------*/
+   aside .option-pay-container .card-pay {
+       border:1px solid $white;
+       height: 90px;
+       border-radius: 11px;
+       display: flex;
+       margin-top: 15px;
+    
+   }
+
+   aside .option-pay-container .card-pay .card-pay-img{
+       width: 50%;
+       font-size: 11px;
+       line-height: 0;
+       padding-top: 3px;
+       border-right: 1px solid $white;
+       display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+       padding: 5px 5px 8px 5px;
+       align-items: center;
+   }
+
+   aside .option-pay-container .card-pay .card-pay-form{
+       width: 50%;
+
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .card-pay input[type="radio" i]{
+       width: 30px;
+       height: 30px;
+   }
+
+   /* Div par el boton cerrar */
+   aside .close-container{
+       width: 100%;
+       position: relative;
+       text-align: right;
+       font-size: 40px;
+   }
+
+   /*  boton cerrar */
+   aside .close-container .btn-close-side-bar{
+     margin-right: 30px;
+    //  margin-bottom: 13px;
+   }
