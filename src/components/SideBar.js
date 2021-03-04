@@ -8,15 +8,23 @@ import { Context } from './context/Context'
 
 export const SideBar = () => {
 
-    const {showSideBar,setShowSideBar} = useContext(Context)
+    const {showSideBar,setShowSideBar,setFormPay} = useContext(Context)
 
+    // OCULTO LA BARRRA
     const hiddenSideBar=()=>{
         setShowSideBar(hidden=>hidden='side-bar')
     }
 
+    // SELCCCIONO  EL  METOD DE PAGO
+    const setPay=(e)=>{
+       setFormPay(pay=>pay=e.target.value);
+       
+    }
+
+
     return (
         <aside className={showSideBar}>
-          <div className="side-bar-title">
+          <div className="side-bar-title" onChange={setPay}>
             <h3>configuración</h3>
 
             <div className="option-pay-container">
@@ -27,7 +35,7 @@ export const SideBar = () => {
                     <p>323-419-4018</p>
                  </div>
                  <div className="card-pay-form">
-                    <input type="radio" className="inputPay" name="pay" id=""/>
+                    <input type="radio" className="inputPay" name="pay" value="nequi" />
                  </div>
                </div>
 
@@ -37,7 +45,7 @@ export const SideBar = () => {
                    <p>843-0132-7802</p>
                 </div>
                 <div className="card-pay-form">
-                   <input type="radio" className="inputPay" name="pay" id=""/>
+                   <input type="radio" className="inputPay" name="pay" value="bancolombia" />
                 </div>
                </div>
 
@@ -47,7 +55,7 @@ export const SideBar = () => {
                    <p>Efectivo</p>
                 </div>
                 <div className="card-pay-form">
-                   <input type="radio" className="inputPago" name="pay"  />
+                   <input type="radio" className="inputPago" name="pay" value="efectivo" />
                 </div>
                </div>
 

@@ -5,7 +5,8 @@ import { Context } from './context/Context'
 
 export const DataPay = () => {
 
-const {cart} = useContext(Context)
+const {cart,formPay,} = useContext(Context)
+
 let subtotal=0;
 let total= 0;
 let envio= 2000;
@@ -13,9 +14,7 @@ let iva=0;
 
 if(cart.length>0){
     cart.forEach(({totalCart,quantity,price})=> {
-
          subtotal+=(quantity*price)
-
     });
     iva=(subtotal*19)/100;
     total+= subtotal+envio+iva;
@@ -32,8 +31,8 @@ const formatter = new Intl.NumberFormat('es-CO',{
         <div className="dataPay">
             <div className="payGrid">
             <div className="rowPay">
-                    <span className="payGridItem">Método de Pago</span>
-                    <span className="payGridItem">Nequi</span> 
+                    <span className="payGridItem">Cliente paga Con</span>
+                    <span className="payGridItem formPay">{subtotal>0 ? formPay : ''}</span>
                 </div>
                 <div className="rowPay">
                     <span className="payGridItem">Sub Total</span>
@@ -47,7 +46,7 @@ const formatter = new Intl.NumberFormat('es-CO',{
 
                 <div className="rowPay">
                     <span className="payGridItem">Costo Envío</span>
-                    <span className="payGridItem">{formatter.format(subtotal>0 ? envio : 0)}</span> 
+                    <span className="payGridItem">{formatter.format(subtotal>0 ? envio : 0)}</span>
                 </div>
 
             </div>

@@ -11,6 +11,7 @@ function App() {
   const [productFinded, setProductFinded] = useState([]);
   const [cart, setCart] = useState([]);
   const [showSideBar, setShowSideBar] = useState('side-bar');
+  const [formPay, setFormPay] = useState('');
 
 
   let dataContext={
@@ -27,7 +28,9 @@ function App() {
       cart,
       setCart,
       showSideBar,
-      setShowSideBar
+      setShowSideBar,
+      formPay,
+      setFormPay
   }
 
 
