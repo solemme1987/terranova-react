@@ -23,6 +23,8 @@
 .formPay{
     text-transform: capitalize;
     font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .totalPay{
     background: $midDark;

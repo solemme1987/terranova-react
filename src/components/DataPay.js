@@ -5,7 +5,7 @@ import { Context } from './context/Context'
 
 export const DataPay = () => {
 
-const {cart,formPay,} = useContext(Context)
+const {cart,formPay,setShowSideBar} = useContext(Context)
 
 let subtotal=0;
 let total= 0;
@@ -27,12 +27,16 @@ const formatter = new Intl.NumberFormat('es-CO',{
     minimumFractionDigits: 0
 })
 
+const showSideBar=()=>{
+    setShowSideBar(show=>show='side-bar active')
+}
+
     return (
         <div className="dataPay">
             <div className="payGrid">
             <div className="rowPay">
-                    <span className="payGridItem">Cliente paga Con</span>
-                    <span className="payGridItem formPay">{subtotal>0 ? formPay : ''}</span>
+                    <span className="payGridItem">Paga Con</span>
+                    <span className="payGridItem formPay" onClick={showSideBar}>{formPay!==""? formPay :'Selec'}</span>
                 </div>
                 <div className="rowPay">
                     <span className="payGridItem">Sub Total</span>

@@ -6,6 +6,7 @@ import { Context } from '../context/Context'
 import { DataPay } from '../DataPay'
 import { Product } from '../Product'
 import { SearchBar } from '../SearchBar'
+import { SideBar } from '../SideBar'
 
 const Cart = ()=> {
 const {cart} = useContext(Context)
@@ -21,6 +22,7 @@ const {cart} = useContext(Context)
     return (
 
         <>
+        <SideBar />
           <Header>
               <SearchBar
                 clasN={clasN}
