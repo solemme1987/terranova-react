@@ -5,27 +5,32 @@ import { Context } from './context/Context'
 
 export const DataPay = () => {
 
+    const formatter = new Intl.NumberFormat('es-CO',{
+        style: 'currency',
+        currency: 'COP',
+        minimumFractionDigits: 0
+    })
+
 const {cart,formPay,setShowSideBar} = useContext(Context)
 
 let subtotal=0;
 let total= 0;
-let envio= 2000;
+let deliveri= 2000;
 let iva=0;
 
+let dataSels='';
 if(cart.length>0){
-    cart.forEach(({totalCart,quantity,price})=> {
-         subtotal+=(quantity*price)
+    cart.forEach(({nameProduct,quantity,price})=> {
+         subtotal+=(quantity*price);
+         dataSels+=`%20${nameProduct}:%20*(${quantity})*%20`
+
     });
     iva=(subtotal*19)/100;
-    total+= subtotal+envio+iva;
+    total+= subtotal+deliveri+iva;
 }
-
+let detailSel=`https://api.whatsapp.com/send?phone=573043393781&text=%20*NUEVO%20PEDIDO:*%20${dataSels}%20SUBTOTAL:%20*${formatter.format(subtotal).trim()}*%20IVA:%20*${formatter.format(iva).trim()}*%20ENVIO:%20*${formatter.format(deliveri).trim()}*%20PAGA%20CON:%20*${formPay}*%20TOTAL:%20*${formatter.format(total).trim()}*`;
 // formatear moneda
-const formatter = new Intl.NumberFormat('es-CO',{
-    style: 'currency',
-    currency: 'COP',
-    minimumFractionDigits: 0
-})
+
 
 const showSideBar=()=>{
     setShowSideBar(show=>show='side-bar active')
@@ -50,7 +55,7 @@ const showSideBar=()=>{
 
                 <div className="rowPay">
                     <span className="payGridItem">Costo Envío</span>
-                    <span className="payGridItem">{formatter.format(subtotal>0 ? envio : 0)}</span>
+                    <span className="payGridItem">{formatter.format(subtotal>0 ? deliveri : 0)}</span>
                 </div>
 
             </div>
@@ -61,10 +66,13 @@ const showSideBar=()=>{
                     <span className="payGridItem">{formatter.format(total>0 ? total : 0)}</span>
                 </div>
                 <div className="payButonBox">
-                    <button>
-                        Enviar Pedido
-                        <i className="fab fa-whatsapp"></i>
-                    </button>
+                     <a href={detailSel}>
+                        <button>
+                            Enviar Pedido
+                            <i className="fab fa-whatsapp"></i>
+                        </button>
+                      </a>
+
                 </div>
             </div>
         </div>
